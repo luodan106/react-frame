@@ -1,0 +1,84 @@
+body,html{
+    margin: 0;
+    padding:0;
+    background-color: #35322f;
+    width: 100%;
+    height: 100%;
+}
+#app{
+    width: 100%;
+    height: 100%;
+}
+.topNav{
+    width: 100%;
+    height: 50px;
+    background-color: #373d41;
+}
+.sideMenu{
+    height: 100%;
+    width: 250px;
+    position: relative;
+    background-color: #373d41;
+    z-index: 1;
+}
+.contractBtn{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background-color: #373d41;
+    text-align: right;
+    line-height: 40px;
+    border: 1px solid #504949;
+}
+.menuUlContent{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    background-color: #373d41;
+    color: white;
+    text-align: left;
+    line-height: 40px;
+    border: 1px solid #504949;
+    z-index: 1;
+}
+.menuUlContent>img{
+    padding:0 10px;
+}
+.menuUl{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow:hidden;
+    visibility: hidden;
+    border: 1px solid #504949;
+    transition: all 1s ease;
+    background-color: antiquewhite;
+    z-index: 0;
+}
+.menuUlContent:hover{
+    cursor: pointer;
+}
+.menuLi{
+    list-style-type: none;
+    color:white;
+    height: 35px;
+    line-height: 35px;
+    padding-left:35px;
+    z-index: -1;
+}
+.menuLi:hover{
+    cursor: pointer;
+}
+.menuLi:nth-child(odd){
+    background-color: #4e4c56;
+}
+.menuLi:nth-child(even){
+    background-color:#49464c;
+}
+.active{
+    max-height:500px;
+    visibility: visible;
+    position: relative;
+}
