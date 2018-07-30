@@ -9,13 +9,18 @@ export default class SideLi extends React.Component{
     }
     render(){
         const listArr=this.props.lilist;
-        
-
+        let className="menuUl";
+        if(!this.props.isSpread){
+            className+=" setPosition";
+        }
+        if(this.props.isActive){
+            className+=" active";
+        }
         return (
-            <ul className={this.props.isActive?'menuUl active':'menuUl'}>
+            <ul className={className}>
                {
                     listArr.map((li,index)=>{
-                        return  <li className='menuLi' key={index}>{li.text}</li>
+                        return  <li className='menuLi' onClick={this.props.handleClick} key={index}>{li.text}</li>
                 })
                 }
             </ul>
