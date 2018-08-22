@@ -80,7 +80,7 @@ export default class SideUi extends React.Component {
                                     onMouseOver={this.showUl} >
                             <div className={ulShow || isShow[index] ? 'menuUlContent' : 'menuUlContent hideWidth'}
                                 onClick={() => this.toggleLi(index)}>
-                                <img src="../public/images/tag.png" />{li.text}
+                                <img src="./public/images/tag.png" />{li.text}
                             </div>
                             <SideLi isSpread={this.props.spread} isActive={isShow[index]} lilist={li.subitems} handleClick={this.props.clickTabs}></SideLi>
                             {ulShow || isShow[index]}

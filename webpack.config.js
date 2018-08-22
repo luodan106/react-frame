@@ -3,8 +3,9 @@ const path=require('path');
 module.exports={
     entry: "./index.js",
     output: {
-        path:'/',
-        filename:'output.js'
+        path:path.join(__dirname,'dist/output'),
+        filename:'output.js',
+        publicPath:'/dist/output/'
     },
     devServer:{
         inline:true,

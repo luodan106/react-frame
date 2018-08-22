@@ -43,7 +43,7 @@ export default class SideNav extends React.Component{
             <React.Fragment>
             <div className={state.spread?'sideMenu':'sideMenu hideWidth'}>
                <div className={state.spread?'contractBtn':'contractBtn hideWidth'}>
-                    <img src={state.spread?'../public/images/doubleleft.png':'../public/images/doubleright.png'} onClick={this.sideSpread}/>
+                    <img src={state.spread?'./public/images/doubleleft.png':'./public/images/doubleright.png'} onClick={this.sideSpread}/>
                </div>
                <SideUl ulShow={state.ulShow}  spread={state.spread} clickTabs={this.addTab}/>
             </div>
